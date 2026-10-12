@@ -164,7 +164,7 @@ nav {
 .logo-icon {
     width: 48px;
     height: 48px;
-    background: linear-gradient(135deg, var(--primary), #4CAF50);
+    background: black;
     border-radius: 12px;
     display: grid;
     place-items: center;
@@ -176,7 +176,7 @@ nav {
     flex-shrink: 0;
     font-family: 'Segoe UI', sans-serif;
 }
-.logo span { color: var(--secondary-dark); }
+.logo span { color: #fff; }
 
 /* ✅ FIXED: Dark grey text on white header (was white → invisible on mobile dropdown) */
 .nav-links {
@@ -203,15 +203,15 @@ nav {
 
 .menu-toggle {
     display: none;
-    background: var(--primary-light);
+    background: black;
     border: none;
     font-size: 24px;
-    color: var(--primary);
+    color: #fff;
     cursor: pointer;
     line-height: 1;
     width: 44px;
     height: 44px;
-    border-radius: 10px;
+    border-radius:0px;
     align-items: center;
     justify-content: center;
     transition: var(--transition);
@@ -457,7 +457,7 @@ nav {
 /* ============ SECTION BASE ============ */
 .section { padding: 80px 20px; }
 .section-alt { background: var(--light-bg); }
-.section-dark { background: var(--dark); color: #fff; }
+.section-dark { background:whitesmoke; color: #fff; }
 
 .section-head { text-align: center; max-width: 720px; margin: 0 auto 50px; }
 .eyebrow {
@@ -472,7 +472,7 @@ nav {
     text-transform: uppercase;
     margin-bottom: 14px;
 }
-.section-dark .eyebrow { background: rgba(255,193,7,.15); color: var(--secondary); }
+.section-dark .eyebrow { background: rgba(255, 7, 181, 0.15); color: black; }
 .section-title {
     font-size: clamp(1.6rem, 3vw, 2.3rem);
     color: var(--dark);
@@ -480,9 +480,9 @@ nav {
     line-height: 1.25;
     letter-spacing: -.5px;
 }
-.section-dark .section-title { color: #fff; }
+.section-dark .section-title { color: black; }
 .section-head p { color: var(--muted); margin-top: 12px; font-size: 1.02rem; }
-.section-dark .section-head p { color: #a9c2b1; }
+.section-dark .section-head p { color: black; }
 
 /* ============ CATEGORY CARDS ============ */
 .categories {
@@ -671,25 +671,32 @@ td.price { font-weight: 800; color: var(--primary); }
     display: flex;
     gap: 16px;
     padding: 24px;
-    background: rgba(255,255,255,.05);
-    border: 1px solid rgba(255,255,255,.1);
-    border-radius: var(--radius);
+    background:white;
+    border: 1px solid darkgrey;
     transition: var(--transition);
+    box-sizing: border-box;
+    box-shadow: inset 30px 40px 20px 10px rgba(0, 0, 0, 0.05);
 }
-.why-item:hover { background: rgba(255,255,255,.09); transform: translateY(-5px); }
+.why-item:hover { background: rgb(255, 255, 255); transform: translateY(-5px); }
 .why-icon {
     min-width: 50px;
     height: 50px;
     border-radius: 12px;
-    background: rgba(255,193,7,.15);
-    color: var(--secondary);
+    background:blue;
+    color: var(--secondary-dark);
     display: grid;
     place-items: center;
     font-size: 23px;
     flex-shrink: 0;
 }
-.why-item h4 { color: #fff; font-size: 1.02rem; margin-bottom: 5px; }
-.why-item p { color: #a9c2b1; font-size: .89rem; }
+.why-item h4 {
+     color: black;
+     font-size: 1.02rem; 
+     margin-bottom: 5px; }
+.why-item p {
+     color: black;
+      font-size: .89rem; 
+    }
 
 /* ============ TESTIMONIALS ============ */
 .testimonials {
@@ -1498,7 +1505,10 @@ footer {
     .step-num { width: 52px; height: 52px; font-size: 1.25rem; }
 
     /* Why items */
-    .why-grid { grid-template-columns: 1fr; gap: 16px; }
+    .why-grid {
+         grid-template-columns: 1fr; gap: 16px;
+         
+         }
     .why-item { padding: 20px; gap: 14px; }
     .why-icon { min-width: 46px; height: 46px; font-size: 21px; }
 
