@@ -1,0 +1,153 @@
+
+    /* ---------- Global Reset ---------- */
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        line-height: 1.6;
+        color: #333;
+        background-color: #f9f9f9;
+    }
+
+    /* ---------- Hero Section ---------- */
+    .page-hero {
+        background-image: url("https://img.magnific.com/free-photo/close-up-heat-pump-outside-home_23-2149250253.jpg?semt=ais_hybrid&w=740&q=80");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        box-sizing: border-box;
+        color: #fff;
+        text-align: center;
+        position: relative;
+        overflow: hidden;
+        width: 100%;
+        height: auto;
+        min-height: 220px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 30px 20px;
+    }
+
+    .page-hero::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.55);
+        z-index: 1;
+    }
+
+    .page-hero h2 {
+        font-weight: 700;
+        position: relative;
+        z-index: 2;
+        font-size: 2rem;
+        margin-bottom: 8px;
+        text-shadow: 1px 1px 3px rgba(0,0,0,0.6);
+        margin-top: 5px;
+    }
+
+    .page-hero p {
+        position: relative;
+        z-index: 2;
+        font-size: 1.05rem;
+        text-shadow: 1px 1px 2px rgba(0,0,0,0.6);
+        max-width: 850px;
+    }
+    .page-hero .crumb {
+        color:#fff;
+        background-color:darkred;
+        padding: 6px 16px;
+        border-radius: 30px;
+        font-size: .85rem;
+        margin-top: 16px;
+        position: relative;
+        z-index: 2;
+    }
+    .page-hero .crumb a {
+        color:#fff;
+    }
+
+    /* ---------- About Section ---------- */
+    .about-section {
+        padding: 60px 20px;
+        background-color: #ffffff;
+    }
+
+    .about-container {
+        max-width: 1100px;
+        margin: 0 auto;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 40px;
+        align-items: center;
+    }
+
+    .about-text {
+        flex: 1 1 500px;
+    }
+
+    .about-text h2 {
+        font-size: 2rem;
+        margin-bottom: 20px;
+        color: #1a1a1a;
+        position: relative;
+        padding-bottom: 10px;
+    }
+
+    .about-text h2::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 60px;
+        height: 4px;
+        background-color: #007bff;
+        border-radius: 2px;
+    }
+
+    .about-text p {
+        margin-bottom: 16px;
+        color: #555;
+        font-size: 1.05rem;
+    }
+
+    .about-text ul {
+        list-style: none;
+        margin-top: 20px;
+    }
+
+    .about-text ul li {
+        margin-bottom: 10px;
+        font-size: 1rem;
+        display: flex;
+        align-items: center;
+    }
+
+    .about-text ul li::before {
+        content: "✔️";
+        margin-right: 10px;
+        color: #007bff;
+        font-weight: bold;
+    }
+
+    .about-image {
+        flex: 1 1 400px;
+        text-align: center;
+    }
+
+    .about-image img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 12px;
+        box-shadow: 0 8px 24px rgba(0,0,0,0.1);
+    }
+
