@@ -9,9 +9,26 @@
         "ignore": [
           "position: sticky",
           "-webkit-text-size-adjust",
-          "scroll-behavior"
+          "scroll-behavior",
+          "scroll-behavior: auto",
+          "aspect-ratio",
+          "scrollbar-width",
+          "-webkit-overflow-scrolling",
+          "scrollbar-width: none",
+          "scroll-behavior: smooth",
+          "inset"
         ]
       }
-    ]
+    ],
+    "compat-api/html": [
+      "default",
+      {
+        "ignore": [
+          "img[loading]",
+          "meta[name=theme-color]"
+        ]
+      }
+    ],
+    "no-inline-styles": "off"
   }
 }
