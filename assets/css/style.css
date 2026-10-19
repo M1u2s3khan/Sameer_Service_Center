@@ -545,7 +545,11 @@ nav {
 .section-alt { background: var(--light-bg); }
 .section-dark { background:whitesmoke; color: #fff; }
 
-.section-head { text-align: center; max-width: 720px; margin: 0 auto 50px; }
+.section-head {
+     text-align: center;
+      max-width: 720px;
+       margin: 0 auto 50px;
+}
 .eyebrow {
     display: inline-block;
     color: var(--primary);
@@ -558,7 +562,10 @@ nav {
     text-transform: uppercase;
     margin-bottom: 14px;
 }
-.section-dark .eyebrow { background: rgba(255, 7, 181, 0.15); color: black; }
+.section-dark .eyebrow {
+     background: rgba(255, 7, 181, 0.15);
+      color: black; 
+    }
 .section-title {
     font-size: clamp(1.6rem, 3vw, 2.3rem);
     color: var(--dark);
@@ -566,9 +573,17 @@ nav {
     line-height: 1.25;
     letter-spacing: -.5px;
 }
-.section-dark .section-title { color: black; }
-.section-head p { color: var(--muted); margin-top: 12px; font-size: 1.02rem; }
-.section-dark .section-head p { color: black; }
+.section-dark .section-title { 
+    color: black;
+ }
+.section-head p {
+     color: var(--muted);
+     margin-top: 12px;
+      font-size: 1.02rem;
+     }
+.section-dark .section-head p { 
+    color: black;
+ }
 
 /* ============ CATEGORY CARDS ============ */
 .categories {
@@ -908,7 +923,6 @@ td.price { font-weight: 800; color: var(--primary); }
     width: 100%;
     padding: 13px 15px;
     border: 1.5px solid #dfe5e1;
-    border-radius: 10px;
     font-size: 16px;
     font-family: inherit;
     background: #fbfdfb;
@@ -1271,7 +1285,8 @@ footer {
     padding-bottom: 44px;
 }
 .footer-brand .logo { 
-    background:"blue";
+    background-color: white;
+    padding: 3px 12px;
     color: #fff;
      margin-bottom: 16px;
      }
